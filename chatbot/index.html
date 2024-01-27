@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Name - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+</head>
+<body><center>
+
+    <!-- Header Section with Logo -->
+    <header>
+        
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="School Logo">
+
+        <h1><b>St. Soldier Public School</h1></b>
+        <p>Welcome to our school website!</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+        <h2>Welcome</h2>
+        <p>This is the main content area. Include welcome messages, news, or important information here.</p>
+        <!-- More content -->
+    </main>
+
+    <!-- Sidebar Section (Optional) -->
+    <aside>
+        <h3>News & Events</h3>
+        <p>Latest news and upcoming events at the school.</p>
+        <p>The news will be updated soon.</p>
+    </aside>
+
+    <!-- Embedded Google Map -->
+    <section id="school-map">
+        <h2>Our Location</h2>
+        <iframe
+            src="https://www.google.com/maps/place/Guru+Teg+Bhadur+Public+Ser+Sec+School+Hamaupur+tassimbali/@30.4287843,76.8652868,16z/data=!4m15!1m8!3m7!1s0x390fb83342b2e7b9:0xbead4e0d72ba0add!2sTasimbli,+Punjab+140501,+India!3b1!8m2!3d30.4281399!4d76.8706548!16s%2Fg%2F11_vx4ttj!3m5!1s0x390fb9d2973b9c41:0x27d80f21dc3aa4ea!8m2!3d30.4239426!4d76.8742172!16s%2Fg%2F11f01tm1fm?entry=ttu"
+            width="1000" height="700" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <div id="chatbot">
+        <div id="chatbot-messages">
+            <!-- Chat messages will appear here -->
+        </div>
+        <input type="text" id="chatbot-input" placeholder="Ask a question...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+    
+    
+    <section id="extra-info">
+        <h2>Additional Information</h2>
+        <p>Details about extracurricular activities, facilities, etc.</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 School Name. All rights reserved.</p>
+        <p>Contact us at: <a href="mailto:info@schoolname.com">info@schoolname.com</a></p>
+        <p>Follow us on social media: [Social Media Links]</p>
+        <!-- Add additional footer content such as links to privacy policy, social media, etc. -->
+    </footer>
+
+    
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body></center>
+</html>
